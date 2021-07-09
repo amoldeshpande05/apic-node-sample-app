@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: amol-sample-node-app
+spec:
+  host: amol-sample-node-app.integro-sandbox-cluster-dec238a6ba0c64ed92191aa193d448c3-0000.us-south.containers.appdomain.cloud
+  to:
+    kind: Service
+    name: amol-sample-node-app

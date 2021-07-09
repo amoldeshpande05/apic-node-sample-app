@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: amol-sample-node-app
+  labels:
+    app: amol-sample-node-app
+spec:
+  selector:
+    app: amol-sample-node-app
+  ports:
+    - port: 8080
+      name: http
+  type: NodePort

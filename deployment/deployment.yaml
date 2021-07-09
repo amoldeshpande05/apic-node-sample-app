@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: amol-sample-node-app
+spec:
+  selector:
+     matchLabels:
+        app: amol-sample-node-app
+        version: v1
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: amol-sample-node-app
+        version: v1
+    spec:
+      containers:
+      - name: amol-sample-node-app
+        image: amoldeshpande/sample-node-app:latest
+        ports:
+        - containerPort: 8080
+      restartPolicy: Always
