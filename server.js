@@ -11,23 +11,28 @@ app.get('/add', (req, res) => {
 
     let param1 = req.query.param1;
     let param2 = req.query.param2;
+    console.log("Request add : param1  : ",param1," param2  : ",param2)
     let result = parseInt(param1) + parseInt(param2)
-    res.send(''+result)
+    res.json({result: result+''})
   })
 
 
 app.get('/sub', (req, res) => {
     let param1 = req.query.param1;
     let param2 = req.query.param2;
+      console.log("Request add : param1  : ",param1," param2  : ",param2)
+
     let result = parseInt(param1) - parseInt(param2)
-    res.send(''+result)
+    res.json({result: result+''})
 })
 
 app.get('/mul', (req, res) => {
     let param1 = req.query.param1;
     let param2 = req.query.param2;
+      console.log("Request add : param1  : ",param1," param2  : ",param2)
+
     let result = parseInt(param1) * parseInt(param2)
-    res.send(''+result)
+    res.json({result: result+''})
   })
 
 
