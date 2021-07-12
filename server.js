@@ -13,6 +13,7 @@ app.get('/add', (req, res) => {
     let param2 = req.query.param2;
     console.log("Request add : param1  : ",param1," param2  : ",param2)
     let result = parseInt(param1) + parseInt(param2)
+    console.log("Result of Add : ",result)
     res.json({result: result+''})
   })
 
@@ -22,6 +23,7 @@ app.get('/sub', (req, res) => {
     let param2 = req.query.param2;
     console.log("Request add : param1  : ",param1," param2  : ",param2)
     let result = parseInt(param1) - parseInt(param2)
+    console.log("Result of Sub : ",result)
     res.json({result: result+''})
 })
 
@@ -30,6 +32,7 @@ app.get('/mul', (req, res) => {
     let param2 = req.query.param2;
     console.log("Request add : param1  : ",param1," param2  : ",param2)
     let result = parseInt(param1) * parseInt(param2)
+    console.log("Result of Multiply : ",result)
     res.json({result: result+''})
   })
 
@@ -38,21 +41,3 @@ app.get('/mul', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
-
-//oc deployment backup
-// oc create deployment sample-node-app --image=amoldeshpande/sample-node-app:latest
-// oc expose deployment sample-node-app --type="NodePort" --port=8080
-// oc expose service sample-node-app
-// oc get routes
-
-
-
-// oc apply -f deployment.yaml
-// oc apply -f service.yaml
-// oc apply -f route.yaml
-// oc get routes
-
-
-//Published apic url
-//https://api.REGION.apiconnect.appdomain.cloud/USERNAME-ENV/CATELOG/PRODUCT/ENDPOINT
-
