@@ -18,4 +18,4 @@ plans:
       hard-limit: false
 apis:
   calculator-api:
-    $ref: api.yaml
+    $ref: calculator-api.yaml

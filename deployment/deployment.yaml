@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: amol-sample-node-app
-        image: amoldeshpande/sample-node-app:latest
+        image: {USERNAME}/{IMAGE_NAME}:latest
         ports:
         - containerPort: 8080
       restartPolicy: Always

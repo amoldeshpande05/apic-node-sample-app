@@ -51,3 +51,8 @@ app.listen(port, () => {
 // oc apply -f service.yaml
 // oc apply -f route.yaml
 // oc get routes
+
+
+//Published apic url
+//https://api.REGION.apiconnect.appdomain.cloud/USERNAME-ENV/CATELOG/PRODUCT/ENDPOINT
+

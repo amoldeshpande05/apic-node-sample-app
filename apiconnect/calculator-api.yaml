@@ -85,7 +85,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'https://sample-apic-app.eu-gb.mybluemix.net/add?param1={param1}&param2={param2}'
+                    target-url: 'http://{APP_URL}/add?param1={param1}&param2={param2}'
             - operations:
                 - verb: get
                   path: /sub
@@ -99,7 +99,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'https://sample-apic-app.eu-gb.mybluemix.net/sub?param1={param1}&param2={param2}'
+                    target-url: 'http://{APP_URL}/sub?param1={param1}&param2={param2}'
             - operations:
                 - verb: get
                   path: /mul
@@ -113,7 +113,7 @@ x-ibm-configuration:
                     stop-on-error:
                       - null
                     version: 1.0.0
-                    target-url: 'https://sample-apic-app.eu-gb.mybluemix.net/mul?param1={param1}&param2={param2}'
+                    target-url: 'https://{APP_URL}/mul?param1={param1}&param2={param2}'
           otherwise: []
           version: 1.0.0
     catch: []
